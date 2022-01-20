@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProductDetailMoreFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsvContainer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:text="Con biết bây giờ mẹ chờ tin con. Khi thấy mai đào nở vàng bên nương. Năm trước con hẹn đầu xuân sẽ về. Nay én bay đầy trước ngõ mà tin con vẫn xa ngàn xa.\n\nÔi nhớ xuân nào thuở trời yên vui. Nghe pháo giao thừa rộn ràng nơi nơi. Bao lứa trai cùng chào xuân chiến trường không lẽ riêng mình êm ấp. Mẹ ơi con xuân này vắng nhà.\n\nNếu con không về chắc mẹ buồn lắm. Mai tranh nghèo không người sửa sang. Khu vườn thiếu hoa vàng mừng xuân... Đàn trẻ thơ ngây chò mong anh trai, sẽ đem về cho tà áo mới, ba ngày xuân đi khoe sớm giềng... Bao lứa trai cùng chào xuân chiến trường không lẽ riêng mình êm ấp. Mẹ ơi con xuân này vắng nhà.\n\nNếu con không về chắc mẹ buồn lắm. Mai tranh nghèo không người sửa sang. Khu vườn thiếu hoa vàng mừng xuân... Đàn trẻ thơ ngây chò mong anh trai, sẽ đem về cho tà áo mới, ba ngày xuân đi khoe sớm giềng..." />
+    </androidx.core.widget.NestedScrollView>
+
+    <GridView
+        android:id="@+id/gvContainer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:background="@color/white_blur"
+        android:layout_marginHorizontal="16dp"
+        android:paddingEnd="-1dp"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp" />
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nvMall"
+            android:icon="@drawable/icon_store"
+            android:title="Cửa hàng" />
+        <item
+            android:id="@+id/nvOrder"
+            android:icon="@drawable/icon_order"
+            android:title="Đơn hàng" />
+        <item
+            android:id="@+id/nvCart"
+            android:icon="@drawable/icon_bag"
+            android:title="Giỏ hàng" />
+        <item
+            android:id="@+id/nvFavorite"
+            android:icon="@drawable/icon_empty_heart"
+            android:title="Yêu thích" />
+        <item
+            android:id="@+id/nvProfile"
+            android:icon="@drawable/icon_person"
+            android:title="Tài khoản" />
+    </group>
+</menu>

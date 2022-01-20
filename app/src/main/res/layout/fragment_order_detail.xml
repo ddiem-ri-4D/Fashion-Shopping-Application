@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.OrderDetailFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tmp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Đơn hàng:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#08041999"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/mtvFullName"
+            app:layout_constraintTop_toTopOf="@+id/mtvTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Thành tiền:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvCode" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.234.000 đ"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/mtvFullName"
+            app:layout_constraintTop_toTopOf="@+id/tmp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvNoProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="(x4 sản phẩm)"
+            android:textSize="10sp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvTotal"
+            app:layout_constraintStart_toEndOf="@+id/mtvTotal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tmp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Khách hàng:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvTotal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Mạnh Cường"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/tmp2"
+            app:layout_constraintTop_toTopOf="@+id/tmp2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tmp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Điện thoại:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvFullName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0786333545"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/mtvFullName"
+            app:layout_constraintTop_toTopOf="@+id/tmp3" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tmp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Địa chỉ:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvPhone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="đường tỉnh lộ 9, số nhà 202, tổ 6, ấp 10, xã Thạnh An, huyện Nhà Bè, TP.HCM"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/mtvFullName"
+            app:layout_constraintTop_toTopOf="@+id/tmp4" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvAddress" />
+
+
+         <ProgressBar
+            android:id="@+id/pbOne"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:progress="100"
+            android:progressTint="@color/gray_light"
+            android:rotation="90"
+            android:transformPivotX="0dp"
+            app:layout_constraintStart_toStartOf="@+id/ordered_indicator"
+            app:layout_constraintTop_toTopOf="@+id/ordered_indicator" />
+
+        <ProgressBar
+            android:id="@+id/pbTwo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:progress="100"
+            android:progressTint="@color/gray_light"
+            android:rotation="90"
+            android:transformPivotX="0dp"
+            app:layout_constraintStart_toStartOf="@+id/packed_indicator"
+            app:layout_constraintTop_toTopOf="@+id/packed_indicator" />
+
+        <ImageView
+            android:id="@+id/packed_indicator"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="@+id/mtvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/ordered_indicator"
+            app:srcCompat="@drawable/shape_indicator"
+            app:tint="@color/gray_light" />
+
+        <ImageView
+            android:id="@+id/ordered_indicator"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            app:tint="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/mtvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/divider6"
+            app:srcCompat="@drawable/shape_indicator" />
+
+        <ImageView
+            android:id="@+id/shipping_indicator"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="@+id/mtvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/packed_indicator"
+            app:srcCompat="@drawable/shape_indicator"
+            app:tint="@color/gray_light" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ordered_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Đặt hàng"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ordered_indicator"
+            app:layout_constraintStart_toEndOf="@+id/ordered_indicator"
+            app:layout_constraintTop_toTopOf="@+id/ordered_indicator" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ordered_indicator"
+            app:layout_constraintStart_toEndOf="@+id/ordered_title"
+            app:layout_constraintTop_toTopOf="@+id/ordered_indicator" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:text="Chờ xử lý"
+            app:layout_constraintStart_toStartOf="@+id/ordered_title"
+            app:layout_constraintTop_toBottomOf="@+id/mtvOrderDate" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/packed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Vận chuyển"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/packed_indicator"
+            app:layout_constraintStart_toEndOf="@+id/packed_indicator"
+            app:layout_constraintTop_toTopOf="@+id/packed_indicator" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDeliveryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/packed_indicator"
+            app:layout_constraintStart_toEndOf="@+id/packed_title"
+            app:layout_constraintTop_toTopOf="@+id/packed_indicator" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:text="Chờ xử lý"
+            app:layout_constraintStart_toStartOf="@+id/packed_title"
+            app:layout_constraintTop_toBottomOf="@+id/mtvDeliveryDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/shipping_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Giao hàng"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/shipping_indicator"
+            app:layout_constraintStart_toEndOf="@+id/shipping_indicator"
+            app:layout_constraintTop_toTopOf="@+id/shipping_indicator" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDoneDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/shipping_indicator"
+            app:layout_constraintStart_toEndOf="@+id/shipping_title"
+            app:layout_constraintTop_toTopOf="@+id/shipping_indicator" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:text="Chờ xử lý"
+            app:layout_constraintStart_toStartOf="@+id/shipping_title"
+            app:layout_constraintTop_toBottomOf="@+id/mtvDoneDate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tmp1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingVertical="4dp"
+        android:background="@color/white_blur"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

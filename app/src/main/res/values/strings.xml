@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Clover</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_account"><font size="15">Tài khoản</font></string>
+    <string name="email_empty">Bạn chưa nhập email!</string>
+    <string name="email_invalid">Email không hợp lệ!</string>
+    <string name="name_empty">Bạn chưa nhập tên!</string>
+    <string name="password_empty">Bạn chưa nhập mật khẩu!</string>
+    <string name="password_short">Mật khẩu phải hơn 7 kí tự!</string>
+    <string name="password_long">Mật khẩu phải dưới 19 kí tự!</string>
+    <string name="retype_empty">Bạn chưa nhập lại mật khẩu!</string>
+    <string name="retype_invalid">Mật khẩu nhập lại chưa khớp!</string>
+    <string name="error_title">Có tí trục trặc rồi...</string>
+    <string name="sign_up_failure">Đăng ký tài khoản không thành công!</string>
+    <string name="sign_in_failure">Đăng nhập tài khoản không thành công!</string>
+    <string name="close">Đóng</string>
+    <string name="forget_password_worry">Đừng lo lắng. Hãy nhập email bạn đã đăng ký vào bên dưới.</string>
+    <string name="recovery_email_sending">\tEmail khôi phục đang được gửi...</string>
+    <string name="recovery_email_failure">Gửi email khôi phục không thành công!</string>
+    <string name="recovery_email_sent">\tEmail khôi phục đã gửi đi.\n\tBạn nhớ kiểm tra email nhé.</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Chưa đăng nhập</string>
+    <string name="nav_header_subtitle">Clover - Đồ bộ thiết kế</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="copyright">Copyright %d - Team9</string>
+    <string name="reset_password">Đang khôi phục mật khẩu...</string>
+    <string name="on_back_press">Nhấn lần nữa để thoát.</string>
+</resources>

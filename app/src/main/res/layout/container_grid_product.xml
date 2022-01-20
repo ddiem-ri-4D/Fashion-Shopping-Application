@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/shape_border"
+    android:elevation="3dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvProductTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Khuyến mãi hôm nay"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        app:drawableTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/mbViewAll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mbViewAll" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Xem thêm"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/glContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbViewAll">
+
+        <include
+            layout="@layout/item_grid_product"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_grid_product"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_grid_product"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_grid_product"
+            app:layout_columnWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/white_blur"
+        app:layout_constraintBottom_toBottomOf="@+id/glContainer"
+        app:layout_constraintEnd_toEndOf="@+id/glContainer"
+        app:layout_constraintStart_toStartOf="@+id/glContainer"
+        app:layout_constraintTop_toTopOf="@+id/glContainer" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/white_blur"
+        app:layout_constraintBottom_toBottomOf="@+id/glContainer"
+        app:layout_constraintEnd_toEndOf="@+id/glContainer"
+        app:layout_constraintStart_toStartOf="@+id/glContainer"
+        app:layout_constraintTop_toTopOf="@+id/glContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

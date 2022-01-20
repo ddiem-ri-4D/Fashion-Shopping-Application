@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.SpecificProductFragment">
+
+    <GridView
+        android:id="@+id/gvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_blur"
+        android:layout_margin="8dp"
+        android:paddingEnd="-1dp"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"/>
+
+</FrameLayout>

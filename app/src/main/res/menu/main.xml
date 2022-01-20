@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/abSearch"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_search"
+        android:title="Tìm kiếm"
+        app:iconTint="@color/black"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:id="@+id/abBell"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_bell"
+        android:title="Thông báo"
+        app:iconTint="@color/black"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/abBag"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_bag"
+        android:title="Giỏ hàng"
+        app:iconTint="@color/black"
+        app:showAsAction="always" />
+</menu>

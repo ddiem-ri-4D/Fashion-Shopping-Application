@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "52404196221",
+    "project_id": "clover-78661",
+    "storage_bucket": "clover-78661.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52404196221:android:2f09e67471af0c64ad7214",
+        "android_client_info": {
+          "package_name": "team9.clover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52404196221-9rsuk5ditc5lcko0rkv3p3vtv1hkie21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team9.clover",
+            "certificate_hash": "10d0bab7f9d759a213426c531b8d7b0890b35b83"
+          }
+        },
+        {
+          "client_id": "52404196221-ojh5e4r93gb6d317vko6ulpclnine1ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt5lhi-FxwssWYSyCbDDIX4xuqyLvoAIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52404196221-ojh5e4r93gb6d317vko6ulpclnine1ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

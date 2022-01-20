@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_blur"
+    tools:context=".Fragment.AccountFragment">
+
+    <ScrollView
+        android:background="@color/white_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_blur"
+            android:orientation="vertical">
+
+            <include layout="@layout/container_account_profile" />
+            <include layout="@layout/container_account_info" />
+            <include layout="@layout/container_account_password" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
